@@ -18,4 +18,8 @@
     return self;
 }
 
+-(void)reRoll{
+    self.roll = [_diceValues objectAtIndex:(arc4random_uniform(6))];
+}
+
 @end

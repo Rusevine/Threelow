@@ -1,5 +1,5 @@
 //
-//  Dice.h
+//  InputCollector.h
 //  Threelow
 //
 //  Created by Wiljay Flores on 2018-08-01.
@@ -8,11 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Dice : NSObject
+@interface InputCollector : NSObject
 
-@property (nonatomic) NSArray *diceValues;
-@property (nonatomic) NSString *roll;
-
--(void)reRoll;
++(NSString *) inputForPrompt:(NSString *)promptString;
 
 @end
