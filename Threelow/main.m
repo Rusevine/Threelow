@@ -30,6 +30,8 @@ int main(int argc, const char * argv[]) {
             } else if ([command isEqualToString:@"hold"]){
                 hold = [InputCollector inputForPrompt:@"Enter a dice to hold."];
                 [game holdDie:[hold integerValue]];
+            } else if ([command isEqualToString:@"reset"]){
+                [game resetDice];
             } else {
             return 0;
             }

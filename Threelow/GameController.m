@@ -46,7 +46,16 @@
 
 -(void)holdDie:(int)index{
     Dice *die = [self.diceArray objectAtIndex:(index-1)];
-    die.held = true;
+    if (die.held == true) {
+        die.held = false;
+    } else {
+        die.held = true;
+    }
 }
 
+-(void)resetDice{
+    for (Dice* die in _diceArray) {
+        die.held = false;
+    }
+}
 @end

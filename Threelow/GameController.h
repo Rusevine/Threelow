@@ -16,5 +16,6 @@
 -(void)displayDice;
 -(void)reRollAllDice;
 -(void)holdDie:(int)index;
+-(void)resetDice;
 
 @end
