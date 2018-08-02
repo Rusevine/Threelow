@@ -13,13 +13,13 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        
+        BOOL gameOn = true;
         NSString *command = [[NSString alloc] init];
         NSString *hold = [[NSString alloc] init];
         GameController *game = [[GameController alloc] init];
         
         
-        while(true){
+        while(gameOn){
         
         [game displayDice];
         
@@ -29,11 +29,14 @@ int main(int argc, const char * argv[]) {
                 [game reRollAllDice];
             } else if ([command isEqualToString:@"hold"]){
                 hold = [InputCollector inputForPrompt:@"Enter a dice to hold."];
-                [game holdDie:[hold integerValue]];
+                [game holdDie:[hold intValue]];
             } else if ([command isEqualToString:@"reset"]){
                 [game resetDice];
+            } else if ([command isEqualToString:@"quit"]){
+                gameOn = false;
+                continue;
             } else {
-            return 0;
+                NSLog(@"Invalid command. Try again.");
             }
         }
     }

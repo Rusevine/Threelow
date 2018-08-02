@@ -12,15 +12,18 @@
 
 -(instancetype) init {
     if(self = [super init]){
-        _diceValues = @[@"⚀",@"⚁",@"⚂",@"⚃",@"⚄",@"⚅"];
-        _roll = [_diceValues objectAtIndex:(arc4random_uniform(6))];
+        _diceValues = [[NSDictionary alloc] initWithObjects:@[@1,@2,@0,@4,@5,@6] forKeys:@[@"⚀",@"⚁",@"⚂",@"⚃",@"⚄",@"⚅"]];
+        _keys = @[@"⚀",@"⚁",@"⚂",@"⚃",@"⚄",@"⚅"];
+        _roll = [_keys objectAtIndex:(arc4random_uniform(6))];
+        _value = [_diceValues objectForKey:_roll];
         _held = false;
     }
     return self;
 }
 
 -(void)reRoll{
-    self.roll = [_diceValues objectAtIndex:(arc4random_uniform(6))];
+    self.roll = [self.keys objectAtIndex:(arc4random_uniform(6))];
+    self.value = [self.diceValues objectForKey:self.roll];
 }
 
 @end

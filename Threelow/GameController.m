@@ -24,16 +24,17 @@
     return self;
 }
 
--(void)displayDice {
+-(void)displayDice{
     int i = 0;
     for (Dice* die in _diceArray) {
         i++;
         if (die.held == false){
-            NSLog(@"%d: %@",i,die.roll);
+            NSLog(@"%d: %@ %@",i,die.roll,die.value);
         } else {
-            NSLog(@"[%d]: %@",i,die.roll);
+            NSLog(@"[%d]: %@ %@",i,die.roll, die.value);
         }
     }
+    NSLog(@"Score: %ld",[self score]);
 }
 
 -(void)reRollAllDice {
@@ -57,5 +58,15 @@
     for (Dice* die in _diceArray) {
         die.held = false;
     }
+}
+
+-(NSInteger)score {
+    NSInteger score = 0;
+    for (Dice* die in _diceArray) {
+        if(die.held == true){
+        score += [die.value integerValue];
+        }
+    }
+    return score;
 }
 @end

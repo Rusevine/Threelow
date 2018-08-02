@@ -17,5 +17,6 @@
 -(void)reRollAllDice;
 -(void)holdDie:(int)index;
 -(void)resetDice;
+-(NSInteger)score;
 
 @end

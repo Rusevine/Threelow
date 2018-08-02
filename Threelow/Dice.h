@@ -10,8 +10,10 @@
 
 @interface Dice : NSObject
 
-@property (nonatomic) NSArray *diceValues;
+@property (nonatomic) NSDictionary *diceValues;
+@property (nonatomic) NSArray *keys;
 @property (nonatomic) NSString *roll;
+@property (nonatomic) NSString *value;
 @property (nonatomic) BOOL held;
 
 -(void)reRoll;
