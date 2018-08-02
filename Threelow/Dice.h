@@ -12,6 +12,7 @@
 
 @property (nonatomic) NSArray *diceValues;
 @property (nonatomic) NSString *roll;
+@property (nonatomic) BOOL held;
 
 -(void)reRoll;
 

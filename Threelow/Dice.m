@@ -14,6 +14,7 @@
     if(self = [super init]){
         _diceValues = @[@"⚀",@"⚁",@"⚂",@"⚃",@"⚄",@"⚅"];
         _roll = [_diceValues objectAtIndex:(arc4random_uniform(6))];
+        _held = false;
     }
     return self;
 }

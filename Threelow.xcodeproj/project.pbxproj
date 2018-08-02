@@ -10,6 +10,7 @@
 		4611C13221126711005EC3E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4611C13121126711005EC3E3 /* main.m */; };
 		4611C13A21126840005EC3E3 /* Dice.m in Sources */ = {isa = PBXBuildFile; fileRef = 4611C13921126840005EC3E3 /* Dice.m */; };
 		4611C13D211270B9005EC3E3 /* InputCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = 4611C13C211270B9005EC3E3 /* InputCollector.m */; };
+		4611C14021127378005EC3E3 /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4611C13F21127378005EC3E3 /* GameController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		4611C13921126840005EC3E3 /* Dice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dice.m; sourceTree = "<group>"; };
 		4611C13B211270B9005EC3E3 /* InputCollector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputCollector.h; sourceTree = "<group>"; };
 		4611C13C211270B9005EC3E3 /* InputCollector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputCollector.m; sourceTree = "<group>"; };
+		4611C13E21127378005EC3E3 /* GameController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
+		4611C13F21127378005EC3E3 /* GameController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +69,8 @@
 				4611C13121126711005EC3E3 /* main.m */,
 				4611C13821126840005EC3E3 /* Dice.h */,
 				4611C13921126840005EC3E3 /* Dice.m */,
+				4611C13E21127378005EC3E3 /* GameController.h */,
+				4611C13F21127378005EC3E3 /* GameController.m */,
 				4611C13B211270B9005EC3E3 /* InputCollector.h */,
 				4611C13C211270B9005EC3E3 /* InputCollector.m */,
 			);
@@ -129,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4611C13D211270B9005EC3E3 /* InputCollector.m in Sources */,
+				4611C14021127378005EC3E3 /* GameController.m in Sources */,
 				4611C13A21126840005EC3E3 /* Dice.m in Sources */,
 				4611C13221126711005EC3E3 /* main.m in Sources */,
 			);
